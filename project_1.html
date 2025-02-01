@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Innoveda</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="img/logo-1.png">
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e0f7fa; /* Light blue background */
+        color: #003366; /* Dark blue text color */
+    }
+    .outer-container {
+        border: 5px solid; /* Green border around the entire page */
+        border-radius: 10px; /* Rounded corners for the outer border */
+        padding: 20px; /* Padding inside the border */
+        margin: 20px; /* Margin outside the border */
+        background-color: #fff; /* White background for the content area */
+    }
+   
+    .intro, .mission {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        background: #fff; /* White background for sections */
+        color: #003366; /* Dark blue text color */
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    .intro img, .mission img {
+        width: 30%; /* Set the width for small images */
+        border-radius: 8px;
+        margin-left: 20px;
+    }
+    .intro div, .mission div {
+        width: 70%; /* Adjust the width as needed */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: #003366; /* Dark blue color for all headings */
+    }
+    h2 {
+        font-size: 2em; /* Increase font size for headings */
+    }
+    p {
+        font-size: 1.2em; /* Increase font size for paragraphs */
+    }
+    .features, .innovations {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+        gap: 20px; /* Space between grid items */
+        margin-top: 20px;
+    }
+    .feature, .innovation {
+        text-align: center;
+        padding: 20px; /* Add padding for better spacing */
+        background: #fff; /* White background for feature boxes */
+        color: black; /* Dark text color */
+        border: 2px solid #4CAF50; /* Green border color */
+        border-radius: 5px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+    }
+    .feature:hover, .innovation:hover {
+        transform: scale(1.05); /* Scale up on hover */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    }
+    .feature i, .innovation i {
+        font-size: 40px; /* Icon size */
+        color: #003366; /* Dark blue color for icons */
+        margin-bottom: 10px; /* Space between icon and text */
+    }
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background: #333; /* Dark footer */
+        color: #fff; /* White text color */
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    .call-to-action {
+        margin-top: 20px;
+        padding: 20px;
+        margin: 20px 0;
+        background: #fff;; /* Light blue background for the call to action */
+        border-radius: 5px; /* Rounded corners */
+        color: #003366; /* Dark blue text color */
+        font-size: 1.2em; /* Increase font size for the call to action */
+        /* Center the text */
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+</style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+
+<!-- Navbar & Carousel Start -->
+<div class="container-fluid  position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0"><img src="img/logo-1.png" style="width: 200px;height:100px;">
+            </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link ">About</a>
+                <a href="project.html" class="nav-item nav-link">Projects</a>
+               
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+           
+        </div>
+    </nav>
+
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px; height:200px;">
+                     
+                        <h1 class="display-1 text-white mb-md-4 animated zoomIn">Creative & Innovative Digital Solution</h1>
+                       
+                   
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="outer-container">
+  
+    <div class="container">
+        <div class="intro">
+            <div>
+                <h2>Welcome to Signify Learning</h2>
+                <p>Signify Learning is a groundbreaking mobile application designed to bridge the gap in education for deaf and mute students. Our innovative platform combines accessible learning, real-time communication, and community support to foster a truly inclusive learning environment.</p>
+                <p>With Signify Learning, students can access a wealth of educational resources, connect with peers and educators, and develop essential skills for success.</p>
+            </div>
+            <img src="img/project_1_1.jpg" alt="Introduction Image"> <!-- Replace with your image URL -->
+        </div>
+
+        <div class="mission">  
+            <img src="img/project_1_2.jpg" alt="Mission Image"> <!-- Replace with your image URL -->
+            <div>
+                <h2>Our Mission</h2>
+                <p>At Signify Learning, our mission is to empower deaf and mute students, parents, and educators with innovative technology that facilitates accessible learning, real-time communication, and community support. We strive to create a world where every individual has equal access to education and opportunities.</p>
+                <p>Signify Learning is committed to creating a brighter future for deaf and mute students worldwide. Together, we can bridge the gap in education and unlock the full potential of deaf and mute students.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-language"></i>
+                    <p>Accurate Sign Language Content in Gujarati & English</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-sign-language"></i>
+                    <p>Indian Sign Language (ISL) Integration</p>
+                </div>
+            
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <p>Accessible for All Users (Students, Parents, Teacher, HR)</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-video"></i>
+                    <p>Use of Animation to Enhance Learning</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Innovative Features</h2>
+            <div class="innovations">
+                <div class="innovation">
+                    <i class="fas fa-comments"></i>
+                    <p>Real-Time Communication Tools</p>
+                </div>
+                <div class="innovation">
+                    <i class="fas fa-lock"></i>
+                    <p>Strong Data Security Measures</p>
+                </div>
+                <div class="innovation">
+                    <i class="fas fa-desktop"></i>
+                    <p>Cross-Platform Compatibility</p>
+                </div>
+                <div class="innovation">
+                    <i class="fas fa-book-open"></i>
+                    <p>Active Educational Modules</p>
+                </div>
+                <div class="innovation">
+                    <i class="fas fa-users-cog"></i>
+                    <p>Community Building Features</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Heading and Paragraph in a Box -->
+        <div class="call-to-action">
+            <h2>Inclusive Education </h2>
+            <p>Join our mission to create a world where every individual has equal access to education and opportunities. Explore our website to learn more about our features, benefits, and how you can be a part of our journey towards inclusive education. Together, we can make a difference. Empowering inclusive education for all is our goal. We believe that education is the key to unlocking potential. Our platform is designed to provide equal access to education. We invite you to join us on this journey. Let's work together to create a more inclusive world.</p>
+        </div>
+    </div>
+
+    
+</div>
+
+
+
+
+   
+
+
+
+    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <!-- Get In Touch Section -->
+                <div class="col-lg-4 col-md-6 footer-about pt-5 mb-5">
+                    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                        <h3 class="text-light mb-0">Get In Touch</h3>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-geo-alt text-primary me-2"></i>
+                        <p class="mb-0">Shed-3  Gujarat Technological University, Chandkheda, Ahmedabad, Gujarat, India.</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-envelope-open text-primary me-2"></i>
+                        <p class="mb-0">info.innoveda@gmail.com</p>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <i class="bi bi-telephone text-primary me-2"></i>
+                        <p class="mb-0">XXXXXXX431</p>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Popular Links Section -->
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-6 col-md-6 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="project.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Projects</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">&nbsp;</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429; ">
+        <div class="container-fluid text-white" >
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                            <p class="mb-0">&copy; <a class="text-white border-bottom" href="index.html"> Innoवेदा </a>. All Rights Reserved. 
+                                Designed by <a class="text-white border-bottom" href="index.html">HTML Codex</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="index.html" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
